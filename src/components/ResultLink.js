@@ -7,13 +7,12 @@ const ResultLink = ({ store, setStore }) => {
   const [short, setShort] = useState("")
 
   useEffect(() => {
-    links.filter((dlStore) => {
-      if (dlStore.url_dynamic_link.slice(10) === store) {
+    links.filter(
+      (dlStore) =>
+        dlStore.url_dynamic_link.slice(10) === store &&
         setShort(`https://api.circularss.com/dl/${dlStore.short_name}`)
-      }
-    })
+    )
   }, [store])
-
 
   const text = () => {
     if (store.length > 0 && short.length > 1) {
@@ -24,7 +23,6 @@ const ResultLink = ({ store, setStore }) => {
       return "https://api.circularss..."
     }
   }
-
 
   return (
     <div className="result">
