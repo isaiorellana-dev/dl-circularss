@@ -1880,4 +1880,25 @@ export const links = [
     valid_from: null,
     valid_until: null,
   },
+  {
+    short_name: "i7s",
+    url_dynamic_link: "/codes/dl/test_store_2000",
+    image: null,
+    valid_from: null,
+    valid_until: null,
+  },
+  {
+    short_name: "y9e",
+    url_dynamic_link: "/codes/dl/antillana_207th_st",
+    image: null,
+    valid_from: null,
+    valid_until: null,
+  },
+  {
+    short_name: "l2f",
+    url_dynamic_link: "/codes/dl/test_store_2",
+    image: null,
+    valid_from: null,
+    valid_until: null,
+  },
 ]
